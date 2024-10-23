@@ -122,7 +122,7 @@ function App() {
             </>
           )}
           {/* Route only for Students */}
-          {user?.accountType === ACCOUNT_TYPE.STUDENT && (
+          {user?.accountType === ACCOUNT_TYPE.CUSTOMER && (
             <>
               <Route
                 path="dashboard/enrolled-courses"

@@ -42,6 +42,7 @@
     "eject": "react-scripts eject",
      "server": "cd server && npm run dev",
     "dev": "concurrently \"npm run start\" \"npm run server\""
+    
   },
   "eslintConfig": {
     "extends": [

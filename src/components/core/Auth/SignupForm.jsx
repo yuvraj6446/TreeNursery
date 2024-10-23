@@ -14,7 +14,7 @@ function SignupForm() {
   const dispatch = useDispatch()
 
   // student or instructor
-  const [accountType, setAccountType] = useState(ACCOUNT_TYPE.STUDENT)
+  const [accountType, setAccountType] = useState(ACCOUNT_TYPE.CUSTOMER)
 
   const [formData, setFormData] = useState({
     firstName: "",
@@ -64,20 +64,20 @@ function SignupForm() {
       password: "",
       confirmPassword: "",
     })
-    setAccountType(ACCOUNT_TYPE.STUDENT)
+    setAccountType(ACCOUNT_TYPE.CUSTOMER)
   }
 
   // data to pass to Tab component
   const tabData = [
     {
       id: 1,
-      tabName: "Student",
-      type: ACCOUNT_TYPE.STUDENT,
+      tabName: "Customer",
+      type: ACCOUNT_TYPE.CUSTOMER,
     },
     {
       id: 2,
-      tabName: "Instructor",
-      type: ACCOUNT_TYPE.INSTRUCTOR,
+      tabName: "admin",
+      type: ACCOUNT_TYPE.ADMIN,
     },
   ]
 
